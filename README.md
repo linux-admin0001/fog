@@ -16,7 +16,9 @@ for i in SimpleIterator():
 ```
 ### Возбуждается исключение:
 ```python
-Traceback (most recent call last):                                                                                                                                         File "<stdin>", line 1, in <module>                                                                                                                                 TypeError: 'SimpleIterator' object is not iterable 
+Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+TypeError: 'SimpleIterator' object is not iterable
 ```
 
 ```python
@@ -35,8 +37,12 @@ for i in SimpleIterable():
 
 ### Результат:
 ```
-hello                                                                                                                                                                 hello                                                                                                                                                                 hello                                                                                                                                                                 hello                                                                                                                                                                 hello                                                                                                                                                                 hello                                                                                                                                                                 
+hello
+hello
+hello
+hello
 ...
+(вечный цикл, так как в `__next__` не возбуждается исключение `StopIteration`)
 ```
 
 ### Другая реализация
