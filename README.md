@@ -50,5 +50,6 @@ hello
 class SimpleIterable:
     def __iter__(self) -> SimpleIterator:
         return self
-    def __next__(self): return "hello"
+    def __next__(self): 
+        return "hello"
 ```
